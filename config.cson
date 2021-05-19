@@ -1,0 +1,45 @@
+"*":
+  core:
+    autoHideMenuBar: true
+    customFileTypes:
+      "source.yaml": [
+        "profile"
+      ]
+      "text.xml": [
+        "template"
+      ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 18
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "b9cb3121-1c8c-4b38-87fb-863a4017c7dc"
+  fonts:
+    fontFamily: "FiraCode"
+  minimap:
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+      selection: true
+      selectionDecorationsZIndex: 0
+  tabs:
+    enableMruTabSwitching: false
+    enableVcsColoring: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false

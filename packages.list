@@ -1,0 +1,16 @@
+file-icons@2.1.47
+fonts@3.13.0
+highlight-selected@0.17.0
+language-cmake@1.2.0
+language-diff@0.7.0
+language-spec@0.1.0
+minimap@4.39.14
+minimap-bookmarks@0.4.6
+minimap-cursorline@1.0.4
+minimap-find-and-replace@5.0.8
+minimap-git-diff@4.3.6
+minimap-highlight-selected@4.6.5
+minimap-pigments@0.2.2
+minimap-selection@4.5.4
+multi-cursor@3.0.0
+pigments@0.40.6

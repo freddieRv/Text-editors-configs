@@ -1,0 +1,45 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'preservim/nerdtree'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'preservim/nerdcommenter'
+Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+syntax on
+
+set number
+
+set cursorline
+
+set shiftwidth=4
+
+set expandtab
+
+set splitright
+
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'absolutepath', 'modified' ] ],
+      \ }
+      \ }
+
+set background=dark
+
+set laststatus=2
+
+colorscheme monokai 
+

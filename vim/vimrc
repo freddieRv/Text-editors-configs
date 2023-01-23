@@ -11,21 +11,40 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'preservim/nerdcommenter'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+packadd! matchit
+
 syntax on
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+set hidden
+
+set term=xterm
 
 set number
 
+set nowrap
+
 set cursorline
 
-set shiftwidth=4
+set autoindent expandtab tabstop=4 shiftwidth=4
 
-set expandtab
+set listchars=eol:$,tab:->,space:·,extends:>,precedes:<
+set list
 
 set splitright
+set splitbelow
+
+set showcmd
+
+set complete+=kspell
 
 let g:lightline = {
       \ 'colorscheme': 'solarized',
@@ -43,3 +62,9 @@ set laststatus=2
 
 colorscheme monokai 
 
+vnoremap <C-c> "+y
+nnoremap <leader>cf :let @+=expand('%')<CR>
+nnoremap <C-Up> :m -2<CR>
+nnoremap <C-Down> :m +1<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <leader>ntf :NERDTreeFind<CR>
